@@ -40,7 +40,7 @@ const Flexbox = styled(({
   paddingTop,
   width,
   ...props
-}) => React.createElement(element, props, children))`
+}) => React.createElement(element || "div", props, children))`
   ${props => (props.alignContent ? `align-content: ${props.alignContent};` : '')}
   ${props => (props.alignSelf ? `align-self: ${props.alignSelf};` : '')}
   ${props => (props.alignItems ? `align-items: ${props.alignItems};` : '')}
